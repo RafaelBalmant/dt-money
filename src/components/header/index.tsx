@@ -1,15 +1,11 @@
-import { useState } from 'react'
-import logoImg from '../../assets/logo.svg'
-import { Container, Content } from './styles'
-
+import logoImg from "../../assets/logo.svg";
+import { Container, Content } from "./styles";
 
 interface HeaderProps {
-  onOpenNewTransitionModal: () => void
+  onOpenNewTransitionModal: () => void;
 }
-export function Header({ onOpenNewTransitionModal }:HeaderProps) {
-
-
-  return(
+export function Header({ onOpenNewTransitionModal }: HeaderProps) {
+  return (
     <Container>
       <Content>
         <img src={logoImg} alt="dt money" />
@@ -18,5 +14,5 @@ export function Header({ onOpenNewTransitionModal }:HeaderProps) {
         </button>
       </Content>
     </Container>
-  )
+  );
 }
